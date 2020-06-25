@@ -37,7 +37,7 @@ app.use(function(req,res,next){
    res.locals.currentUser = req.user;
    next();
 });
-/* hello */
+
 app.use('/', indexRouter)
 
 app.listen(process.env.PORT || 3000)
